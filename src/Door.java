@@ -3,6 +3,8 @@ public class Door extends MapSite implements MazeGame{
     public Room room1;
     public Room room2;
 
+
+
     @Override
     public void enter() {
 

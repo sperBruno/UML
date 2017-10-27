@@ -1,4 +1,6 @@
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
 
 public class MasterTester7 {
   public MasterTester7() {}
@@ -77,10 +79,10 @@ public class MasterTester7 {
   }
   
   public static boolean hasMethod(Class<?> paramClass1, String paramString, Class<?> paramClass2, Class<?>... paramVarArgs) {
-    Object localObject1;
+    Method[] localObject1;
     if (paramVarArgs == null) {
       localObject1 = paramClass1.getDeclaredMethods();
-      for (Object localObject3 : localObject1) {
+      for (Method localObject3 : localObject1) {
         if (localObject3.getName().equals(paramString))
           return true;
       }
@@ -90,8 +92,9 @@ public class MasterTester7 {
 
     try
     {
-      localObject1 = paramClass1.getDeclaredMethod(paramString, paramVarArgs);
-      if (!((java.lang.reflect.Method)localObject1).getReturnType().equals(paramClass2))
+      Method localObject11;
+      localObject11 = paramClass1.getDeclaredMethod(paramString, paramVarArgs);
+      if (!((java.lang.reflect.Method)localObject11).getReturnType().equals(paramClass2))
       {
         return false;
       }
