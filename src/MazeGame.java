@@ -1,10 +1,9 @@
 public class MazeGame {
 
-    public Maze createMaze(){
-    	return new Maze();
-    }
+	public Maze createMaze() {
+		return new Maze();
+	}
 
-    public void loadMaze(){}
-
-	
+	public void loadMaze() {
+	}
 }

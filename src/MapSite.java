@@ -1,4 +1,5 @@
 public abstract class MapSite {
 
-    private void enter(){}
+	private void enter() {
+	}
 }
