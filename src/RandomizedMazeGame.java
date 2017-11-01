@@ -1,5 +1,7 @@
-public interface RandomizedMazeGame {
+public class RandomizedMazeGame extends MazeGame{
 
-    public Maze randomize(int i);
+    public Maze randomize(int i){
+    	return new Maze();
+    }
 
 }

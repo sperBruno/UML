@@ -1,6 +1,10 @@
-public interface MazeGame extends RandomizedMazeGame {
+public class MazeGame {
 
-    public Maze createMaze();
+    public Maze createMaze(){
+    	return new Maze();
+    }
 
-    public void loadMaze();
+    public void loadMaze(){}
+
+	
 }
